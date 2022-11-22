@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->middleware('auth')->name('admin.home');
+
+Route::get('/admin/horoscopes/import', 'HoroscopesImportController@show')->name('admin.horoscopes.import');
+Route::post('/admin/horoscopes/import', 'HoroscopesImportController@store');
+
