@@ -14,10 +14,14 @@
                         </div>
                     @endif
 
+                    {{-- form importazione file --}}
                     <form action="/admin/horoscopes/import" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <input type="file" name="file">
+                            @if ()
+                                
+                            @endif
                             <button type="submit" class="btn btn-primary">Importa</button>
                         </div>
                     </form>
