@@ -5,6 +5,7 @@
  */
 
 require('./bootstrap');
+require('./filter_by_date');
 
 window.Vue = require('vue');
 

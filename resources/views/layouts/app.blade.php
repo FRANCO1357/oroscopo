@@ -21,6 +21,8 @@
 </head>
 <body>
     <div id="app">
+
+        {{-- header --}}
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/admin') }}">
@@ -74,9 +76,19 @@
             </div>
         </nav>
 
+        {{-- main --}}
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
+    <style>
+        main{
+            min-height: calc(100vh - 50px);
+            background-image: url('images/background.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </body>
 </html>
